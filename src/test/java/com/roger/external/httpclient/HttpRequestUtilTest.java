@@ -33,5 +33,14 @@ public class HttpRequestUtilTest{
 		
 		assertTrue(respString.contains("安徽"));
 	}
+	
+	@Test
+	public void testPhoneSoap() {
+		
+		JSONObject respResult = HttpRequestUtil.soap(APPLICATION_NAME, "E:/phone.txt");
+		String respString  = respResult.getString("respResult");
+		System.out.println(respString);
+		assertTrue(respString.contains("安徽"));
+	}
 
 }

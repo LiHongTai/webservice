@@ -1,0 +1,6 @@
+--生成Java Class 文件
+wsimport http://ws.webxml.com.cn/WebServices/MobileCodeWS.asmx?WSDL
+--在当前目录下生成 Java 源文件和Class编译文件
+wsimport -s . http://ws.webxml.com.cn/WebServices/MobileCodeWS.asmx?WSDL
+--在当前目录下生成 Java 源文件和Class编译文件 (指定报名)
+wsimport -encoding utf-8 -s . -p com.roger.external.wsimport.phone http://ws.webxml.com.cn/WebServices/MobileCodeWS.asmx?WSDL
